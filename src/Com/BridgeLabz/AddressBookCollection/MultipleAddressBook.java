@@ -5,10 +5,6 @@ import java.util.*;
 
 public class MultipleAddressBook {
 
-    /**
-     * Java HashMap class implements the Map interface which allows us to store key
-     * and value pair, where keys should be unique.
-     */
     Map<String, AddressBook> addressBookMap = new HashMap<>();
 
     /**

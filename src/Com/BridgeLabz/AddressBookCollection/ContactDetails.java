@@ -2,11 +2,6 @@ package Com.BridgeLabz.AddressBookCollection;
 
 public class ContactDetails {
 
-    /**
-     * private variables can only be accessed within the same class (an outside
-     * class has no access to it) private = restricted access However, it is
-     * possible to access them if we provide public get and set methods.
-     */
     private String firstName;
     private String lastName;
     private String address;
@@ -20,19 +15,7 @@ public class ContactDetails {
 
     }
 
-    /**
-     * creating a parameterized constructor of ContactDetails by passing parameters
-     * with no return type
-     *
-     * @param firstName
-     * @param lastName
-     * @param address
-     * @param city
-     * @param state
-     * @param zipCode
-     * @param mobileNumber
-     * @param emailId
-     */
+
     public ContactDetails(String firstName, String lastName, String address, String city, String state, int zipCode,
                           long mobileNumber, String emailId) {
         this.firstName = firstName;

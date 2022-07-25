@@ -33,7 +33,7 @@ public class AddressBookMain {
                     obj1.printContactsInBook();
                     break;
                 case 6:
-                    obj2.searchByOptions();
+                    obj2.viewByOptions();
                     break;
                 case 0:
                     System.exit(0);
