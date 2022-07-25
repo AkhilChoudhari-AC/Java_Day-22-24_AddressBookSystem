@@ -2,6 +2,7 @@ package Com.BridgeLabz.AddressBookCollection;
 
 public class ContactDetails {
 
+
     private String firstName;
     private String lastName;
     private String address;
@@ -15,7 +16,19 @@ public class ContactDetails {
 
     }
 
-
+    /**
+     * creating a parameterized constructor of ContactDetails by passing parameters
+     * with no return type
+     *
+     * @param firstName
+     * @param lastName
+     * @param address
+     * @param city
+     * @param state
+     * @param zipCode
+     * @param mobileNumber
+     * @param emailId
+     */
     public ContactDetails(String firstName, String lastName, String address, String city, String state, int zipCode,
                           long mobileNumber, String emailId) {
         this.firstName = firstName;
@@ -134,7 +147,12 @@ public class ContactDetails {
         return zipCode;
     }
 
-
+    /**
+     * The set method takes a parameter (zipcode) and assigns it to the zipcode
+     * variable. The this keyword is used to refer to the current object.
+     *
+     * @param //Zipcode
+     */
     public void setZipCode(int zipCode) {
         this.zipCode = zipCode;
     }
@@ -185,5 +203,4 @@ public class ContactDetails {
                 + ", mobileNo=" + mobileNumber + ", emailId='" + emailId + '\'' + '}';
 
     }
-
 }

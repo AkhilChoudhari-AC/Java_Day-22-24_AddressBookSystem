@@ -85,14 +85,7 @@ public class AddressBook {
      * @param name -passing name
      */
     public void searchByName(String name) {
-        /**
-         * creating Stream from list of contactDetails. Filter operation produces a new
-         * stream that contains elements of the original stream that pass a given
-         * test(specified by a Predicate). filter(),is a Intermediate operations return
-         * a new stream on which further processing can be done. here filter is used to
-         * search particular name of a person and the filtered stream is creates a list
-         * and will collect in a contactDetails using collector
-         */
+
         List<ContactDetails> collect = contactDetailsList.stream().filter(p -> p.getFirstName().equalsIgnoreCase(name))
                 .collect(Collectors.toList());
         /**
@@ -119,6 +112,22 @@ public class AddressBook {
         for (ContactDetails contact : collect) {
             System.out.println("Search result: " + contact);
         }
+    }
+
+    /**
+     * Declaring The Count Contacts Method By City Name Using Java Streams To Count
+     * The Contacts By using City Name
+     *
+     * @param cityName -passing the city name to count the contacts method
+     */
+    public void countContactsByUsingCity(String cityName) {
+        long count = 0;
+        long count1 = contactDetailsList.stream().filter(g -> g.getCity().equalsIgnoreCase(cityName)).count();
+        for (ContactDetails contact : contactDetailsList) {
+            count1 = count1 + count;
+        }
+        System.out.println("Contact List :" + count1);
+
     }
 
     /**
@@ -221,8 +230,8 @@ public class AddressBook {
     }
 
     /**
-     * create method searchByOptions() by searching the person using option like
-     * name, city, state and from previous menu
+     * create method viewByOptions() is used to view the options by searching the
+     * person using option like name, city, state and from previous menu
      */
     public void viewByOptions() {
         Scanner scanner = new Scanner(System.in);
