@@ -46,7 +46,11 @@ public class AddressBookMain {
         }
     }
 
-
+    /**
+     * Main method for manipulation AddressBookCollection
+     *
+     * @param args - Default Java param (Not used)
+     */
     public static void main(String[] args) {
         AddressBookMain addressBookMain = new AddressBookMain();
         /**
