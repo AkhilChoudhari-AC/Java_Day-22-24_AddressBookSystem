@@ -2,7 +2,11 @@ package Com.BridgeLabz.AddressBookCollection;
 
 public class ContactDetails {
 
-
+    /**
+     * private variables can only be accessed within the same class (an outside
+     * class has no access to it) private = restricted access However, it is
+     * possible to access them if we provide public get and set methods.
+     */
     private String firstName;
     private String lastName;
     private String address;
@@ -146,6 +150,7 @@ public class ContactDetails {
     public int getZipCode() {
         return zipCode;
     }
+
 
     public void setZipCode(int zipCode) {
         this.zipCode = zipCode;
