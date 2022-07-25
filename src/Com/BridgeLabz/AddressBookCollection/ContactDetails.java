@@ -2,6 +2,7 @@ package Com.BridgeLabz.AddressBookCollection;
 
 public class ContactDetails {
 
+
     private String firstName;
     private String lastName;
     private String address;
@@ -15,7 +16,19 @@ public class ContactDetails {
 
     }
 
-
+    /**
+     * creating a parameterized constructor of ContactDetails by passing parameters
+     * with no return type
+     *
+     * @param firstName
+     * @param lastName
+     * @param address
+     * @param city
+     * @param state
+     * @param zipCode
+     * @param mobileNumber
+     * @param emailId
+     */
     public ContactDetails(String firstName, String lastName, String address, String city, String state, int zipCode,
                           long mobileNumber, String emailId) {
         this.firstName = firstName;
@@ -28,44 +41,89 @@ public class ContactDetails {
         this.emailId = emailId;
     }
 
+    /**
+     * getter setter methods created method getFirstName() The get method returns
+     * the value of the variable firstName.
+     *
+     * @return -return to method created
+     */
     public String getFirstName() {
         return firstName;
     }
 
-
+    /**
+     * The set method takes a parameter (firstName) and assigns it to the firstName
+     * variable. The this keyword is used to refer to the current object.
+     *
+     * @param firstName
+     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-
+    /**
+     * created method getlastName() The get method returns the value of the variable
+     * lastName.
+     *
+     * @return -return to method created
+     */
     public String getLastName() {
         return lastName;
     }
 
-
+    /**
+     * The set method takes a parameter (lastName) and assigns it to the lastName
+     * variable. The this keyword is used to refer to the current object.
+     *
+     * @param lastName
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * The get method returns the value of the variable address.
+     *
+     * @return -return to method created
+     */
     public String getAddress() {
         return address;
     }
 
-
+    /**
+     * The set method takes a parameter (address) and assigns it to the address
+     * variable. The this keyword is used to refer to the current object.
+     *
+     * @param address
+     */
     public void setAddress(String address) {
         this.address = address;
     }
 
+    /**
+     * The get method returns the value of the variable city
+     *
+     * @return -return to method created
+     */
     public String getCity() {
         return city;
     }
 
-
+    /**
+     * The set method takes a parameter (city) and assigns it to the city variable.
+     * The this keyword is used to refer to the current object.
+     *
+     * @param city
+     */
     public void setCity(String city) {
         this.city = city;
     }
 
-
+    /**
+     * The get method returns the value of the variable state.
+     *
+     * @return -return to method created
+     */
     public String getState() {
         return state;
     }
@@ -88,7 +146,6 @@ public class ContactDetails {
     public int getZipCode() {
         return zipCode;
     }
-
 
     public void setZipCode(int zipCode) {
         this.zipCode = zipCode;
@@ -142,4 +199,3 @@ public class ContactDetails {
     }
 
 }
-
