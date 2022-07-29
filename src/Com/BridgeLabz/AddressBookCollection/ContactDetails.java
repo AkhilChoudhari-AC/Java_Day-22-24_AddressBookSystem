@@ -15,6 +15,7 @@ public class ContactDetails {
 
     }
 
+
     public ContactDetails(String firstName, String lastName, String address, String city, String state, int zipCode,
                           long mobileNumber, String emailId) {
         this.firstName = firstName;

@@ -159,6 +159,15 @@ public class AddressBook {
     }
 
     /**
+     * Declaring Sort Method Sorting The Details Of Contact By City
+     */
+    public void sortByCity() {
+        List<ContactDetails> list = contactDetailsList.stream().collect(Collectors.toList());
+        list.stream().sorted((g1, g2) -> ((String) g1.getCity()).compareTo(g2.getCity()))
+                .forEach(contact -> System.out.println(contact.getFirstName() + " " + contact.getLastName()));
+    }
+
+    /**
      * Declaring The Edit Contact Method To Edit The Details Of Contact Edit By
      * Using FirstName If First Name Is Match The Contact Will Edit
      */
